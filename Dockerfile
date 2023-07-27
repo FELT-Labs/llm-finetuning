@@ -20,7 +20,7 @@ RUN [ ${#TORCH_AUDIO} -gt 0 ] && VERSION='torchaudio=='TORCH_AUDIO'.*' ||  VERSI
 
 COPY ./requirements.txt ./requirements.txt
 
-RUN python3 -m pip install -r requirements.txt \
-    && python3 -m pip uninstall tensorflow flax \
-    && python3 -m pip install -U "itsdangerous<2.1.0" \
+RUN python3 -m pip install --no-cache-dir -r requirements.txt \
+    && python3 -m pip uninstall --no-cache-dir tensorflow flax \
+    && python3 -m pip install --no-cache-dir -U "itsdangerous<2.1.0" \
     && rm -rf /var/lib/apt/lists/* 
