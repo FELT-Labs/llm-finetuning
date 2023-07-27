@@ -3,6 +3,10 @@ LABEL maintainer="FELT Labs"
 
 ARG DEBIAN_FRONTEND=noninteractive
 
+RUN apt update \
+    && apt install -y python3 python3-pip \
+    && python3 -m pip install --no-cache-dir --upgrade pip
+
 # If set to nothing, will install the latest version
 ARG PYTORCH='2.0.1'
 ARG TORCH_VISION=''
@@ -16,10 +20,7 @@ RUN [ ${#TORCH_AUDIO} -gt 0 ] && VERSION='torchaudio=='TORCH_AUDIO'.*' ||  VERSI
 
 COPY ./requirements.txt ./requirements.txt
 
-RUN apt update \
-    && apt install -y git libsndfile1-dev espeak-ng python3 python3-pip \
-    && python3 -m pip install --no-cache-dir --upgrade pip \
-    && python3 -m pip install -y -r requirements.txt \
+RUN python3 -m pip install -y -r requirements.txt \
     && python3 -m pip uninstall -y tensorflow flax \
     && python3 -m pip install -U "itsdangerous<2.1.0" \
     && rm -rf /var/lib/apt/lists/* 
