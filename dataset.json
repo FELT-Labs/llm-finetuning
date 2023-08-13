@@ -1,0 +1,20 @@
+[
+  {
+    "text": "### Question: What is a decentralized data marketplace? ### Response: A data marketplace allows providers to publish data and buyers to consume data. Unlike centralized data marketplaces, decentralized ones give users more control over their data, algorithms and analytics by minimizing custodianship and providing transparent and immutable records of every transaction. With features such as Compute-to-Data (C2D), data and algorithms can be ingested into secure Docker containers where escapes avoided, protecting both the data and algorithms."
+  },
+  {
+    "text": "### Question: What is FELT Labs? ### Response: FELT Labs is a data science company that provides a suite of tools for working with private and distributed data. Our focus is on federated learning, which allows you to train machine learning models or perform data analytics across multiple datasets while preserving data privacy. We built our solution on top of Ocean Protocol, that creates tools for the web3 data economy. This means you can easily select and use datasets from Ocean. Our web application simplifies the entire training process, making it easy for users to get started quickly."
+  },
+  {
+    "text": "### Question: What is federated learning? ### Response: Federated learning is a powerful technique that enables multiple parties to collaborate on training a single machine learning model while keeping their private data secure. For example, three separate companies might want to create a machine learning model to improve their product recommendations, but they don't want to share their data with each other. With federated learning, each company trains a local model on its own data. These local models are then combined to create a global model that's better than any of the local models individually, while ensuring that no sensitive data is revealed during the process."
+  },
+  {
+    "text": "### Question: What are benefits of FELT Labs? ### Response: Key benefits of FELT: 1. Secure - All data remains securely on the data provider machine. Access to data is protected by a blockchain network. 2. Encrypted - All trained models are encrypted and exchanged only between interested parties. This ensures that the models are kept confidential and that privacy is maintained throughout the process. 3. Easy - FELT makes the entire process of federated learning simple and easy to use. With our web application, data scientists can easily select compatible datasets from Ocean, choose their preferred algorithms, and train their models seamlessly. 4. Rewards - Data providers can set prices on their data and get paid for providing their data. This incentivizes data sharing and allows data providers to benefit from the use of their data. By leveraging FELT's secure, encrypted, and easy-to-use platform, data scientists and data providers can unlock the power of federated learning and gain new insights from their data while maintaining privacy and security."
+  },
+  {
+    "text": "### Question: How can company use FELT? ### Response: As a company, you often have a lot of data, and you want to hire a company to help you with analyzing data, creating prediction models, and solving different problems. The issue is that your data can be sensitive, and you don't want to face issues with providing your data to an analysis company. In that case, you can use FELT and Ocean protocol to provide your data as a compute asset. Data scientists will be able to train models, but they won't be able to directly see or copy your data. All data will remain under your control."
+  },
+  {
+    "text": "### Question: How do I control who accesses my data on Ocean protocol? ### Response: Ocean provides tools for access control, fine-grained permissions, passlisting, and blocklisting addresses. Data and AI services can be shared under the conditions set by the owner of the data. There is no central intermediary, which ensures no one can interfere with the transaction and both the publisher and user have transparency."
+  }
+]
